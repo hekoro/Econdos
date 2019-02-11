@@ -1,85 +1,174 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Site Econdos!</title>
-  </head>
-  <body>
-    <div class="row">
-      <div class="col-3">
-          <img src="imagem econdos.png" alt="icone Econdos" width="50" height="30"> 
-          <label>Econdos</label>
-      </div>
-      <div class="col-9"> 
-          <nav class="nav text-right">
-              <a class="nav-link active" href="#">Active</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link" href="#">Link</a>
-            </nav>
-      </div>  
-  </div>
-    
-  <div class="text-center">
-  
-    <img src="imagem econdos.png" alt="icone Econdos" width="500" height="300" >
-  </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="row">
-              <div class="col-6">
-                 <img class="" src="charizard.png" alt="Second slide">
-              </div>
-              <div class="col-6 text-center">
-                 <p>teste</p>
-             </div>
-            </div>
-          </div>
-        </div>
-      
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-6">
-             <img class="" src="megatoise.png" alt="Second slide">
-          </div>
-          <div class="col-6 text-center">
-             <p>teste2</p>
-         </div>
-        </div>
-         </div>
-      <div class="carousel-item">
-          <div class="row">
-            <div class="col-6">
-               <img class="" src="megavenu.png" alt="Second slide">
-            </div>
-            <div class="col-6 text-center">
-               <p>teste3sssssssssssss</p>
-           </div>
+  <title>Site Econdos!</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="imagem econdos.png" class="d-inline-block align-top" alt="imagemecondos" width="50" height="30">
+    <a class="navbar-brand" href="#">eCondos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Baixar <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Sobre Nós</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+<div  class="text-center">
+  <img src="imagem econdos.png" class="p-3" alt="imagemecondos" width="500" height="300">
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner align-items-center bg-warning p-2">
+      <div class="carousel-item active">
+        <div class="row align-items-center">
+          <div class="text-center col-6">      
+            <i class="fa fa-book" style="font-size: 90px" aria-hidden="true"></i>
+          </div>
+          <div class="text-left col-4">
+           <h1 style="font-size: 30px">Ocorrências</h1>
+           <h4 style="font-size: 18px">Crie, visualize e gerencie as ocorrências de seu condomínio em qualquer lugar e a qualquer hora</h4>
+          </div>
+       </div>
+      </div>
+      <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="text-center col-6">      
+              <i class="fa fa-book" style="font-size: 90px" aria-hidden="true"></i>
+            </div>
+            <div class="text-left col-4">
+             <h1 style="font-size: 30px">Avisos</h1>
+             <h4 style="font-size: 18px">Vai faltar água? <br> Elevador entrará em manutenção?<br><br>
+
+                Crie avisos e notifique a todos de seu condomínio, onde quer que eles estejam!</h4>
+            </div>
+         </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="text-center col-6">      
+                <i class="fa fa-book" style="font-size: 90px" aria-hidden="true"></i>
+              </div>
+              <div class="text-left col-4">
+               <h1 style="font-size: 30px">Documentos</h1>
+               <h4 style="font-size: 18px">Disponibilize atas de reuniões, regimento interno, prestação de contas e outros documentos, de forma rápida, prática e fácil.</h4>
+              </div>
+           </div>
+          </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 
+	<div class="container bg-warning mt-2" id="borda">
+      <div class="row">
+        <h1 class="col-12 text-center">Contato</h1>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label>Nome*</label>
+          <input class="form-control" type="text" name="nome" placeholder="Seu nome">
+        </div>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label>Telefone*</label>
+          <input class="form-control" type="number" name="telefone" placeholder="Seu telefone com DDD">
+        </div>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label>Nome do Condomínio*</label>
+          <input class="form-control" type="text" name="nomedocondominio" placeholder="O nome do seu Condomínio">
+        </div>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label>CEP do Condomínio*</label>
+          <input class="form-control" type="text" name="CEP" placeholder="Coloque o cep do seu condomínio">
+        </div>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label for="exampleFormControlSelect1">Tipo do condomínio</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Selecione o tipo</option>
+            <option>Pequeno</option>
+            <option>Médio</option>
+            <option>Grande</option>
+            <option>Gigante</option>
+            <option>Naipe Silvio Santos</option>
+          </select>
+        </div>
+        <div class="col-sm-12 col-md-6 form-group">
+          <label for="exampleFormControlSelect1">Função</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Selecione sua função</option>
+            <option>Militar</option>
+            <option>Padeiro</option>
+            <option>Lutador</option>
+            <option>Enfermeiro</option>
+            <option>Traficante</option>
+          </select>
+        </div>
+        <div>
+          <div class="col-sm-12 form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="200"></textarea>
+          </div>
+  
+        </div>
+  
+        <div class="col-6">
+          <button type="button" class="btn btn-light">Limpar</button>
+        </div>
+  
+        <div class="col-6 text-right">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+  
+      </div>
+      <p id="campos"> *Campos Obrigatórios</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 
 
 
 
+</body>
 
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
 </html>
-
-
