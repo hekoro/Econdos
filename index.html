@@ -168,23 +168,23 @@ Totalmente sem compromisso, não precisa pagar nada =)</h4>
         <h1 class="col-12 text-center">Contato</h1>
         <div class="col-sm-12 col-md-6 form-group">
           <label>Nome*</label>
-          <input class="form-control" type="text" name="nome" placeholder="Seu nome">
+          <input id="nome" class="form-control" type="text" name="nome" placeholder="Seu nome">
         </div>
         <div class="col-sm-12 col-md-6 form-group">
           <label>Telefone*</label>
-          <input class="form-control" type="number" name="telefone" placeholder="Seu telefone com DDD">
+          <input id="telefone" class="form-control" type="number" name="telefone" placeholder="Seu telefone com DDD">
         </div>
         <div class="col-sm-12 col-md-6 form-group">
           <label>Nome do Condomínio*</label>
-          <input class="form-control" type="text" name="nomedocondominio" placeholder="O nome do seu Condomínio">
+          <input id="condominio" class="form-control" type="text" name="nomedocondominio" placeholder="O nome do seu Condomínio">
         </div>
         <div class="col-sm-12 col-md-6 form-group">
           <label>CEP do Condomínio*</label>
-          <input class="form-control" type="text" name="CEP" placeholder="Coloque o cep do seu condomínio">
+          <input id="cep" class="form-control" type="text" name="CEP" placeholder="Coloque o cep do seu condomínio">
         </div>
         <div class="col-sm-12 col-md-6 form-group">
           <label for="exampleFormControlSelect1">Tipo do condomínio</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <select id="tipocondo" class="form-control" id="exampleFormControlSelect1">
             <option>Selecione o tipo</option>
             <option>Pequeno</option>
             <option>Médio</option>
@@ -195,7 +195,7 @@ Totalmente sem compromisso, não precisa pagar nada =)</h4>
         </div>
         <div class="col-sm-12 col-md-6 form-group">
           <label for="exampleFormControlSelect1">Função</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <select id="funcao" class="form-control" id="exampleFormControlSelect1">
             <option>Selecione sua função</option>
             <option>Militar</option>
             <option>Padeiro</option>
@@ -217,7 +217,8 @@ Totalmente sem compromisso, não precisa pagar nada =)</h4>
         </div>
   
         <div class="col-6 text-right">
-          <button class="btn btn-primary" type="submit">Enviar</button>
+          <button onclick="aparecernatela()" class="btn btn-primary">Enviar</button>
+          <a href="#" onclick="=alert"></a>
         </div>
       </div>
       <div class="col-6 text-right">
@@ -233,7 +234,59 @@ Totalmente sem compromisso, não precisa pagar nada =)</h4>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
+    <script> 
 
+    
+    function aparecernatela ()
+     
+    {
+      var nome = document.getElementById('nome');
+      var telefone = document.getElementById('telefone');
+      var condominio = document.getElementById('condominio');
+      var tipocondo = document.getElementById('tipocondo');
+      var mensagem = document.getElementById('mensagem');
+      var cep = document.getElementById('cep');
+      var funcao = document.getElementById('funcao'); 
+      var onome = ('O nome escolhido foi: ');
+      var otel = ('O Telefone digitado foi: ');
+      var ocondo = ('O Condomínio é: ');
+      var otipo = ('O Tipo do condomínio é: ')
+      var ocep = ('o CEP digitado foi: ');
+      var ofuncao = ('Sua função é: ');
+
+        var a = "" ;
+
+        
+        a +=onome;
+        a +=nome.value;
+        a += '\n'
+        a += '\n'
+        a +=otel;
+        a +=telefone.value;
+        a += '\n'        
+        a += '\n'
+        a +=ocondo
+        a +=condominio.value
+        a += '\n'
+        a += '\n'
+        a +=otipo;
+        a +=tipocondo.value;
+        a += '\n'
+        a += '\n'
+        a +=ocep;
+        a +=cep.value;
+        a += '\n'
+        a += '\n'
+        a +=ofuncao;
+        a +=funcao.value;
+
+        alert (a);
+
+    };
+   
+    console.log (nome, telefone, condominio, tipocondo, mensagem, cep, funcao); 
+
+    </script>
 
 
 
